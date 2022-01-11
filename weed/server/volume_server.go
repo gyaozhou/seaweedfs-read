@@ -46,6 +46,7 @@ type VolumeServer struct {
 	stopChan                chan bool
 }
 
+// zhou: README,
 func NewVolumeServer(adminMux, publicMux *http.ServeMux, ip string,
 	port int, grpcPort int, publicUrl string,
 	folders []string, maxCounts []int, minFreeSpaces []util.MinFreeSpace, diskTypes []types.DiskType,

@@ -7,6 +7,9 @@ tags
 .AppleDouble
 .LSOverride
 
+cscope.files
+cscope.out
+
 # Icon must end with two \r
 Icon
 

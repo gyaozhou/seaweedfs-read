@@ -42,6 +42,7 @@ func init() {
 	weed_server.StaticFS, _ = fs.Sub(static, "static")
 }
 
+// zhou:
 func main() {
 	glog.MaxSize = 1024 * 1024 * 32
 	rand.Seed(time.Now().UnixNano())

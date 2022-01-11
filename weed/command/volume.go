@@ -228,6 +228,7 @@ func (v VolumeServerOptions) startVolumeServer(volumeFolders, maxVolumeCounts, v
 		volumeNeedleMapKind = storage.NeedleMapLevelDbLarge
 	}
 
+	// zhou:
 	volumeServer := weed_server.NewVolumeServer(volumeMux, publicVolumeMux,
 		*v.ip, *v.port, *v.portGrpc, *v.publicUrl,
 		v.folders, v.folderMaxLimits, minFreeSpaces, diskTypes,
